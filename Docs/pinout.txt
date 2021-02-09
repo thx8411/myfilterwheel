@@ -1,0 +1,32 @@
+DRV8834
+
+P0  -> ENABLE	VMOT ->	5V
+X   -> M0	GND  -> GND
+5V  -> M1	B2   -> MOT
+X   -> CONFIG	B1   -> MOT
+X   -> VREF	A1   -> MOT
+5V  -> SLEEP	A2   -> MOT
+P1  -> STEP	FLT  -> X
+GND -> DIR	GND  -> X
+
+
+Digispark
+
+VIN -> X
+GND -> GND
+5V  -> 5V
+
+P2  -> Hall sensor (Pull Up)
+P1  -> STEP
+P0  -> ENABLE
+P3  -> X (USB)
+P4  -> X (USB)
+P5  -> X
+
+
+A3144
+
+Vcc -> 5V
+GND -> GND
+OUT -> P2
+

@@ -1,0 +1,22 @@
+<head>
+</head>
+<body>
+<h1>QHYCFW RS232 communication protocol</h1>
+
+<img src="./protocol.png">
+
+<p>Note 1: When send a goto command to QHYCFW2. Motor will start goto the target position. After arrived. QHYCFW2 will send back the current position.
+ 
+<p>For example:  Now QHYCFW2 is in position 1(position1=command 0)  and target is position 4(position4=command 3). After the color wheel arrived the target , it will send back 3(ASCII)
+ 
+<p>But if current position is 1 (position1=command 0) and you send the same position (command 0) to QHYCFW2 . Color wheel will not rotate. And in the old version (the version before 201409) the color wheel will not send back any info in this condition. In the new version . the color wheel will send the current position: 0(ASCII)
+
+<p>This modification is used to judge if the colorwheel has arrived the target for the host software.
+ 
+ 
+<p>Note 2: There is no this function before Version 201409. If you call this function QHYCFW2 will reply nothing.
+ 
+<p>Note 3:Tere is no this function before Version 201409. If you call this function QHYCFW2 will reply nothing.
+ 
+<p>Note 4:Tere is no this function before Version 201409. If you call this function QHYCFW2 will reply nothing.
+</body>
