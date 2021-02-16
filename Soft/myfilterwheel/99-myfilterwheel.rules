@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", SUBSYSTEMS=="usb", ATTRS{product}=="myfilterwheel", SYMLINK+="myfilterwheel"
